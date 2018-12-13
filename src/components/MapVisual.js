@@ -12,6 +12,7 @@ class MapVisual extends Component {
         lng : this.props.longitude
       }
   }
+
   static defaultProps = {
     center: {
       lat: 29.7604,
@@ -21,7 +22,7 @@ class MapVisual extends Component {
   };
  
   render() {
-  
+    
     return (
       // Important! Always set the container height explicitly
       <div style={{ height: 'calc(100vh - 65px)', width: '100%' }}>

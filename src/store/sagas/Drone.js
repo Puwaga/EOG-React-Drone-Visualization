@@ -20,7 +20,7 @@ function* watchFetchDrone(action) {
       return;
     }
     yield put({ type: actions.DRONE_DATA_RECEIVED, data});
-    yield call(delay, 3000);
+    yield call(delay, 1000);
   }
   
 }
