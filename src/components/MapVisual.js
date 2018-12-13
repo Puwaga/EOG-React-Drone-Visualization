@@ -21,7 +21,7 @@ class MapVisual extends Component {
   };
  
   render() {
-    console.log(this.props)
+  
     return (
       // Important! Always set the container height explicitly
       <div style={{ height: 'calc(100vh - 65px)', width: '100%' }}>
