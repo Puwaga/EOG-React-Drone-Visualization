@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+*{
+    margin: 0;
+    padding: 0;
+}
+.Dashboard-Visualization{
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+    padding: 10px;
+    margin: 10px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    font-size: 12px;
+    top:0;
+    margin-top: 80px;
+
+}
+.Dashboard-Visualization ul{
+   list-style-type: none;
+   
+}
+.Dashboard-Visualization ul li{
+    padding: 8px 6px;
+}
+
+
+.Graph-Visualization{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    /* width: 500px;
+    height: 300px; */
+    bottom: 0;
+    /* padding: 10px; */
+    margin: 10px;
+    z-index: 10;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.maker{
+    width: 40px;
+    height: 40px;
+    background-image: url('../imgs/drone.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main-svg{
+    background: none !important;
+    text-align: center !important;
+    color: #fff !important;
+}
+
+.nsdrag{
+    color: #fff !important; 
+}

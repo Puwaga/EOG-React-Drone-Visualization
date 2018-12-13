@@ -7,9 +7,13 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "./components/Header";
 import Wrapper from "./components/Wrapper";
-import NowWhat from "./components/NowWhat";
+import Home from "./components/Home"
+
+import { BrowserRouter , Route } from 'react-router-dom'
+
 
 const store = createStore();
+
 const theme = createMuiTheme({
   typography: {
     useNextVariants: true
@@ -28,16 +32,21 @@ const theme = createMuiTheme({
 });
 
 const App = props => (
-  <MuiThemeProvider theme={theme}>
-    <CssBaseline />
-    <Provider store={store}>
-      <Wrapper>
-        <Header />
-        <NowWhat />
-        <ToastContainer />
-      </Wrapper>
-    </Provider>
-  </MuiThemeProvider>
+  <BrowserRouter>
+    <MuiThemeProvider theme={theme}>
+      <CssBaseline />
+      <Provider store={store}>
+        <Wrapper>
+          <Header />
+          
+          <Route path='/' component={Home} />
+
+          <ToastContainer />
+        </Wrapper>
+      </Provider>
+    </MuiThemeProvider>
+  </BrowserRouter>
+  
 );
 
 export default App;

@@ -1,19 +1,19 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import { withStyles } from "@material-ui/core/styles";
+import {AppBar ,Toolbar, Typography, withStyles} from "@material-ui/core";
+
 import Weather from "./Weather";
 
 const styles = {
   grow: {
     flexGrow: 1
+  },
+  background : {
+    background : '#2964c4'
   }
 };
 
 const Header = props => {
   const { classes } = props;
-
   const name = "Edison Nkemande's";
   return (
     <AppBar position="static">

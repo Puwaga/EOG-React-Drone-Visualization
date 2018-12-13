@@ -7,6 +7,8 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { withStyles } from "@material-ui/core/styles";
 import AvatarRaw from "@material-ui/core/Avatar";
+import NavList from "./NavList";
+
 
 const cardStyles = theme => ({
   root: {
@@ -30,15 +32,17 @@ const Avatar = withStyles(avatarStyles)(AvatarRaw);
 
 const styles = {
   card: {
-    margin: "5% 25%"
+    margin: "2% 15%"
   }
 };
 
 const NowWhat = props => {
   const { classes } = props;
+
   return (
     <Card className={classes.card}>
-      <CardHeader title="OK, Edison Nkemande, you're all setup. Now What?" />
+      
+      <NavList />
       <CardContent>
         <List>
           <ListItem>

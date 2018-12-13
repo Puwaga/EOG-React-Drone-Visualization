@@ -16,17 +16,16 @@ const cardStyles = theme => ({
 const Chip = withStyles(cardStyles)(ChipRaw);
 
 class Weather extends Component {
+  
   componentDidMount() {
     this.props.onLoad();
   }
   render() {
-    const {
-      loading,
-      name,
-      weather_state_name,
-      temperatureinFahrenheit
-    } = this.props;
+    
+    const {loading,name,weather_state_name,temperatureinFahrenheit} = this.props;
+
     if (loading) return <LinearProgress />;
+
     return (
       <Chip
         label={`Weather in ${name}: ${weather_state_name} and ${temperatureinFahrenheit}°`}
@@ -36,12 +35,7 @@ class Weather extends Component {
 }
 
 const mapState = (state, ownProps) => {
-  const {
-    loading,
-    name,
-    weather_state_name,
-    temperatureinFahrenheit
-  } = state.weather;
+  const {loading,name,weather_state_name,temperatureinFahrenheit} = state.weather;
   return {
     loading,
     name,
