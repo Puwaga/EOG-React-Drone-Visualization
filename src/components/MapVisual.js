@@ -17,7 +17,7 @@ class MapVisual extends Component {
       lat: 29.7604,
       lng: -95.3698
     },
-    zoom: 7
+    zoom: 5
   };
  
   render() {
